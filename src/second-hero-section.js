@@ -9,6 +9,7 @@ export default function SecondHero () {
         <p className='second-hero-first' id='fourth-line'>preventing others from struggling with math the way I did. Disclaimer that all of the resources</p>
         <p className='second-hero-first' id='fourth-line'>found are online and I do not own any of them.</p>
         <h1>Topics we showcase</h1>
+        <img src="C:\Users\yousu\PSC\my-app\src\images\f(x) (1).jpg" alt="grade9"/>
         </div>
     </div>
 
