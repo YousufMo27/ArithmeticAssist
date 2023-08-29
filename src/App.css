@@ -10,6 +10,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 div {
@@ -127,3 +128,52 @@ label.logo a {
 }
 
 
+.image-one {
+    position: absolute;
+    top: 1050px;
+    left: 25%;
+}
+
+.image-one-text {
+    position: absolute;
+    top: 1165px;
+    left: 26.25%;
+    padding-bottom: 100px;
+}
+
+#img-two {
+    left: 40%;
+}
+
+#img-three {
+    left: 55%;
+}
+
+#img-four {
+    left: 70%;
+}
+
+#txt-two {
+    left: 41%;
+}
+
+#txt-three {
+    left: 56.25%;
+}
+
+#txt-four {
+    left: 71%;
+}
+
+
+.side-menu a{
+    text-decoration: none;
+}
+
+.side-menu {
+    background-color: pink;
+    position: absolute;
+    height: 850px;
+    width: 300px;
+
+}

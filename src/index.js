@@ -2,12 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Home from './pages/homepage';
 import reportWebVitals from './reportWebVitals';
+import { SecondPage } from './pages/secondpage';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  }, 
+
+  {
+    path: "/homepage",
+    element: <Home/>,
+  }, 
+
+  {
+    path: "/resources",
+    element: <SecondPage/>,
+  }, 
+
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

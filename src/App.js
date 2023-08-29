@@ -1,15 +1,15 @@
 import './App.css';
-import Navbar from './navbar';
-import Hero from './hero-section'
-import SecondHero from './second-hero-section';
+import {Route, Routes} from "react-router-dom"
+import Home from './pages/homepage';
+import { SecondPage } from './pages/secondpage';
 function App() {
 
   return (
-    <div className="App">
-    <Navbar/>
-    <Hero/>
-    <SecondHero/>
-    </div>
+  <Routes>
+    <Route path="/" element={<Home />}/>
+    <Route path="/resources" element={<SecondPage/>} />
+  </Routes>
+
   );
 }
 
