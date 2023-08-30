@@ -1,7 +1,6 @@
 import '../App.css'
 import {Link} from 'react-router-dom'
 
-
 export default function Hero () {
     return <div className="hero-background">
         <div className="hero-txt">

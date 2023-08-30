@@ -18,7 +18,7 @@ div {
 }
 
 .navbar {
-    background-color: #02150E;
+    background-color: black;
 }
 
 label.logo {
@@ -165,15 +165,57 @@ label.logo a {
     left: 71%;
 }
 
+.side-menu {
+    height: 91%;
+    position: absolute;
+    width: 220px;
+    margin-right: 1200px;
+    background-color: #E7E9EB;
+    transition: 0.5s;
+    
+}
 
 .side-menu a{
     text-decoration: none;
+    display: block;
 }
 
-.side-menu {
-    background-color: pink;
-    position: absolute;
-    height: 850px;
-    width: 300px;
 
+.title-name {
+    font-weight: 600;
+    font-size: 23px;
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.item-buttons {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #E7E9EB;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.item-buttons:hover {
+    background-color: lightblue;
+}
+
+.main-title {
+    position: relative;
+    margin-left: 250px;
+}
+
+.info {
+    margin-left: 241px;   
+}
+
+.second-title {
+    position: relative;
+    margin-left: 250px;
+}
+

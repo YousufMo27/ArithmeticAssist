@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    overflow-x: hidden;  
+}
+
+.navbar {
+    background-color: #02150E;
+}
+
+.container-info {
+    height: 91.35%;
+    position: absolute;
+    width: 1700px;
+    margin-left: 220px;
+}
+
