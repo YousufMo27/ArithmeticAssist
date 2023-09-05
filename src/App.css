@@ -203,6 +203,7 @@ label.logo a {
 
 .item-buttons:hover {
     background-color: lightblue;
+    font-weight: bold;
 }
 
 .main-title {

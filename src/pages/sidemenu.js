@@ -2,13 +2,17 @@ import '../App.css'
 import { Link } from 'react-router-dom'
 
 export function Sidemenu () {
+
     return <div className="side-menu">
+        
         <h1 className='title-name'>Grade 9 Content</h1>
             <ul>
                 <Link to="/polynomial" style={{ textDecoration: 'none' }}>
-                <button className='item-buttons'>Polynomials</button>
+                <button id='btn-one' className='item-buttons'>Polynomials</button>
                 </Link>
+                <Link id='btn-two' to='/Equation' style={{ textDecoration: 'none' }}>
                 <button className='item-buttons'>Equation Solving</button>
+                </Link>
                 <button className='item-buttons'>Working with Data</button>
                 <button className='item-buttons'>Slope of a Line</button>
                 <button className='item-buttons'>Equation of a Line</button>

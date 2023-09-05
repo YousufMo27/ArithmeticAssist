@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import Home from './pages/homepage';
 import reportWebVitals from './reportWebVitals';
-import { SecondPage } from './pages/secondpage';
+// import { SecondPage } from './pages/secondpage';
 import { PolynomialMenu } from './curric-pages/polynomial';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { EquationMenu } from './curric-pages/equation';
 
 
 const router = createBrowserRouter([
@@ -24,13 +25,13 @@ const router = createBrowserRouter([
   }, 
 
   {
-    path: "/resources",
-    element: <SecondPage/>,
+    path: "/polynomial",
+    element: <PolynomialMenu/>,
   }, 
 
   {
-    path: "/polynomial",
-    element: <PolynomialMenu/>,
+    path: "/equation",
+    element: <EquationMenu/>,
   }, 
 
 ]);
