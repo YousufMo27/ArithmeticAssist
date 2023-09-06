@@ -1,21 +1,30 @@
-import { SideNav } from "./sideNav"
-import '../info-pages.css'
+import InfoPages from '../info-pages.module.css'
+import Navbar from "../pages/navbar"
+import { Sidemenu } from "../pages/sidemenu"
+import Secondnavbar from "../pages/second-nav"
+
 export function PolynomialMenu () {
-    return <div className="H">
-        <SideNav/>
-        <div className="container-info">
-            <h1 className="title">Intro to Polynomials, Exponents, and Exponent Laws</h1>
-            <p className="intro-brief">This section will cover exponents, exponent laws, polynomials, and polynomial properties.<br/>Polynomials are the foundation for almost future concepts in Math.</p>
-            <hr className="border-line" style={{marginBottom: 40}}></hr>
+    return <div className="container">
+    <Navbar/>
+    <Secondnavbar/>
+    <Sidemenu/>
+        <div className={InfoPages["container-info"]}>
+            
+            <h1 className={InfoPages["title"]}>Intro to Polynomials, Exponents, and Exponent Laws</h1>
+            <p className={InfoPages["intro-brief"]}>This section will cover exponents, exponent laws, polynomials, and polynomial properties.<br/>Polynomials are the foundation for almost future concepts in Math.</p>
+            <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
             <h2>Exponents</h2>
-            <p>Exponents are repeated multplication similar to the way how multplication is repeated additon, a number to the power of another number has to be multiplied that many times</p>
-            <p>For example, 2² = 2 x 2 = 4. 2³ = 2 x 2 x 2 = 8. By definition any non zero number to the power of 0 is 1, i.e 2⁰ = 1.</p>
+            <p>Exponents are repeated multplication similar to the way how multplication is repeated additon,</p>
+            <p>a number to the power of another number has to be multiplied that many times. For</p>
+            <p>example, 2² = 2 x 2 = 4. 2³ = 2 x 2 x 2 = 8. By definition any non zero number to</p>
+            <p>the power of 0 is 1, i.e 2⁰ = 1.</p>
             <h3>Exponent Laws</h3>
-            <p>Exponent Laws are crucial when it comes to polynomial multiplication and division of the same variable, and plays a factor in future Math concepts.</p>
-            <p>There are three Exponent Laws</p>
+            <p>Exponent Laws are crucial when it comes to polynomial multiplication and division</p>
+            <p>of the same variable, and plays a factor in future Math concepts. There are three</p>
+            <p>Exponent Laws</p>
             <h3>Product of Powers</h3>
-            <p>When multiplying two values with the same bases, you keep the base the same and add the exponents.</p>
-            <p>For example, (x²)(x) = x²⁺¹ = x³.</p>
+            <p>When multiplying two values with the same bases, you keep the base the same</p>
+            <p>base and add the exponents.For example, (x²)(x) = x²⁺¹ = x³.</p>
             <h3>Quotient of Powers</h3>
             <p>When dividing two values of the same base, you keep the base and subtract the exponents</p>
             <p>For example, x²&frasl;x = x²⁻¹ = x</p>

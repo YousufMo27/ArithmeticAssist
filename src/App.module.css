@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    
 }
 
 html {
@@ -172,7 +173,7 @@ label.logo a {
     margin-right: 1200px;
     background-color: #E7E9EB;
     transition: 0.5s;
-    
+    display: block;
 }
 
 .side-menu a{
