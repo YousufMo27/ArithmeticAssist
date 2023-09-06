@@ -5,13 +5,8 @@ import SecondHero from './second-hero-section';
 import { React, useEffect } from 'react';
 function Home () {
     useEffect(() => {
-        // Applying on mount
-                document.body.style.overflow = "visible";
-        // Applying on unmount    
-                return () => {
-                  document.body.style.overflow = "hidden";
-                }
-              }, [])
+  document.body.style.overflow = "visible";
+    }, [])
     return <div>
     <Navbar/>
     <Hero/>

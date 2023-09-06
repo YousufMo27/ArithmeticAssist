@@ -2,8 +2,12 @@ import InfoPages from '../info-pages.module.css'
 import Navbar from "../pages/navbar"
 import { Sidemenu } from "../pages/sidemenu"
 import Secondnavbar from "../pages/second-nav"
+import { React, useEffect } from 'react'
 
 export function PolynomialMenu () {
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+          }, [])
     return <div className="container">
     <Navbar/>
     <Secondnavbar/>
@@ -11,7 +15,7 @@ export function PolynomialMenu () {
         <div className={InfoPages["container-info"]}>
             
             <h1 className={InfoPages["title"]}>Intro to Polynomials, Exponents, and Exponent Laws</h1>
-            <p className={InfoPages["intro-brief"]}>This section will cover exponents, exponent laws, polynomials, and polynomial properties.<br/>Polynomials are the foundation for almost future concepts in Math.</p>
+            <p className={InfoPages["intro-brief"]}>This section will cover exponents, exponent laws, polynomials, and polynomial properties.Polynomials are the foundation for almost future concepts in Math.</p>
             <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
             <h2>Exponents</h2>
             <p>Exponents are repeated multplication similar to the way how multplication is repeated additon,</p>
@@ -41,7 +45,7 @@ export function PolynomialMenu () {
             <p>Polynomial expressions have many properties and rules, like the distributive property for example.</p>
             <p>This video will help explain the rules and concepts.</p>
             <iframe src="https://www.youtube.com/embed/BSCSNAF_aQg" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-            <p id="vid-src"><i>Organic Chemistry Tutor</i> - Youtube</p>
+            <p id={InfoPages['vid-src']}><i>Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }

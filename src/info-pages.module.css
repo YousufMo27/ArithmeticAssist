@@ -37,6 +37,7 @@ div {
     position: absolute;
     width: 100%;
     font-family: "Noto Sans","Helvetica Neue","Helvetica","Arial","Liberation Sans","Roboto","Noto",sans-serif;
+    
     /* -webkit-box-shadow:inset 0px 0px 0px 5px rgba(0,0,0,.2);
     -moz-box-shadow:inset 0px 0px 0px 5px rgba(0,0,0,.2);
     box-shadow:inset 0px 0px 0px 3px rgba(0,0,0,.2); */
@@ -147,16 +148,21 @@ iframe {
 
 #vid-src {
     margin-top: 6px;
+    margin-bottom: 200px;
 }
 
 .navinfo {
     display: none;
 }
 
+.navinfo a:hover {
+    background-color: #02150E;
+}
+
 @media (max-width: 1250px) {
-    .navbar {
+    /* .container-info {
         background-color: blue;
-    }
+    } */
 
     .container-info h1 {
         left: 3%;
@@ -168,9 +174,10 @@ iframe {
 }
 
 @media (max-width: 1170px) {
-    .navbar {
-        background-color: greenyellow;
-    }
+
+    /* .container-info {
+        background-color: red;
+    } */
 
     .container-info h1 {
         left: 2%;
@@ -197,9 +204,9 @@ iframe {
 }
 
 @media (max-width:1102px)  {
-    .navbar {
-        background-color: aliceblue;
-    }
+    /* .container-info {
+        background-color: green;
+    } */
 
     .container-info h2 {
         left: 2%;
@@ -223,9 +230,9 @@ iframe {
 }
 
 @media (max-width:1000px) {
-    .navbar {
-        background-color: yellow;
-    }
+    /* .container-info {
+        background-color: pink;
+    } */
     .navinfo {
         display: flex;
         background-color: #333;
@@ -276,11 +283,76 @@ iframe {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:888px) {
 
-    .navbar {
-        background-color: red;
+    /* .container-info {
+        background-color: orange;
+    } */
+
+    .container-info h1 {
+        left: 1%;
+
     }
+
+    .container-info p {
+        left: 5%;
+        font-size: 2vw;
+
+    }
+
+    .container-info h2 {
+        left: 5%;
+    }
+
+    .container-info h3 {
+        left: 5%;
+    }
+
+    .container-info {
+        height: 100%;
+    }
+    
 
 }
 
+@media  (max-width: 770px){
+
+    /* .container-info {
+        background-color: aqua;
+    } */
+
+    .container-info p {
+        font-size: 2vw;
+    }
+    
+}
+@media (max-width:690px) {
+    /* .container-info {
+        background-color: red;
+    } */
+
+    .intro-brief {
+        left: 0%;
+        text-align: center;
+    }
+
+    .container-info p {
+        font-size: 14px;
+        left: 1.4%;
+    }
+
+    .container-info h2{
+        left: 0;
+        text-align: center;  
+    }
+
+    .container-info h3{
+        left: 0;
+        text-align: center;  
+        }
+
+    iframe {
+            left: 9%;
+    }
+
+}
