@@ -8,7 +8,8 @@ export function PolynomialMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
           }, [])
-    return <div className="container">
+
+    return <div className={InfoPages["container"]}>
     <Navbar/>
     <Secondnavbar/>
     <Sidemenu/>
@@ -19,8 +20,8 @@ export function PolynomialMenu () {
             <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
             <h2>Exponents</h2>
             <p>Exponents are repeated multplication similar to the way how multplication is repeated additon,</p>
-            <p>a number to the power of another number has to be multiplied that many times. For</p>
-            <p>example, 2² = 2 x 2 = 4. 2³ = 2 x 2 x 2 = 8. By definition any non zero number to</p>
+            <p>a number to the power of another number has to be multiplied that many times.</p>
+            <p>For example, 2² = 2 x 2 = 4. 2³ = 2 x 2 x 2 = 8. By definition any non zero number to</p>
             <p>the power of 0 is 1, i.e 2⁰ = 1.</p>
             <h3>Exponent Laws</h3>
             <p>Exponent Laws are crucial when it comes to polynomial multiplication and division</p>

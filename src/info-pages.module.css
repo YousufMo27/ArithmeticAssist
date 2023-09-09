@@ -57,7 +57,6 @@ div {
     display: block;
 }
 
-
 .title-name {
     font-weight: 600;
     font-size: 23px;
@@ -91,7 +90,7 @@ div {
 }
 
 .intro-brief {
-    margin-left: 80px;
+    margin-left: 20px;
     margin-top: 36px;
     font-size: 20px;
     margin-bottom: 10px;
@@ -204,9 +203,9 @@ iframe {
 }
 
 @media (max-width:1102px)  {
-    /* .container-info {
+     /* .container-info {
         background-color: green;
-    } */
+    }  */
 
     .container-info h2 {
         left: 2%;
@@ -271,7 +270,7 @@ iframe {
     }
 
     .container-info h2 {
-        left: 15%;
+        left: 15%; 
     }
 
     .container-info h3 {

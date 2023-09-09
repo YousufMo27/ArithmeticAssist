@@ -14,8 +14,8 @@ export function Sidemenu () {
                 <Link to="/polynomial" style={{ textDecoration: 'none' }}>
                 <button id='btn-one' className={InfoPages['item-buttons']}>Polynomials</button>
                 </Link>
-                <Link id='btn-two' to='/Equation' style={{ textDecoration: 'none' }}>
-                <button className={InfoPages['item-buttons']}>Equation Solving</button>
+                <Link  to='/Equation' style={{ textDecoration: 'none' }}>
+                <button id='btn-two' className={InfoPages['item-buttons']}>Equation Solving</button>
                 </Link>
                 <button className={InfoPages['item-buttons']}>Working with Data</button>
                 <button className={InfoPages['item-buttons']}>Slope of a Line</button>
