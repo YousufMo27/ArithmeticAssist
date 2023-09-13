@@ -14,7 +14,7 @@ export default function SecondHero () {
         <p className={AppCss['second-hero-first']} id='fourth-line'>preventing others from struggling with math the way I did. Disclaimer that all of the resources</p>
         <p className={AppCss['second-hero-first']} id='fourth-line'>found are online and I do not own any of them.</p>
         </div>
-        <h1>Topics we showcase</h1>
+        <h1 className={AppCss['topic-txt']}>Topics we showcase</h1>
         <div className={AppCss['third-hero']}>
         <img className={AppCss["image-one"]} src={image1} alt="dd"/>
         <h1 className={AppCss["image-one-text"]}>Grade 9</h1>
