@@ -95,6 +95,7 @@ div {
     font-size: 20px;
     margin-bottom: 10px;
     line-height: 1.5;
+    width: 1000px;
 }
 
 .border-line {
@@ -147,7 +148,17 @@ iframe {
 
 #vid-src {
     margin-top: 6px;
-    margin-bottom: 200px;
+    margin-bottom: 40px
+}
+
+.sheet-link {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 400px;
+    left: 10vw;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .navinfo {
@@ -158,10 +169,20 @@ iframe {
     background-color: #02150E;
 }
 
+@media (max-width: 1360px) {
+    .container-info {
+        background-color: red;
+    }
+
+    .intro-brief {
+        width: 700px;
+    }
+}
+
 @media (max-width: 1250px) {
-    /* .container-info {
+    .container-info {
         background-color: blue;
-    } */
+    }
 
     .container-info h1 {
         left: 3%;
@@ -174,9 +195,9 @@ iframe {
 
 @media (max-width: 1170px) {
 
-    /* .container-info {
+    .container-info {
         background-color: red;
-    } */
+    }
 
     .container-info h1 {
         left: 2%;
@@ -203,9 +224,9 @@ iframe {
 }
 
 @media (max-width:1102px)  {
-     /* .container-info {
+     .container-info {
         background-color: green;
-    }  */
+    } 
 
     .container-info h2 {
         left: 2%;
@@ -229,9 +250,9 @@ iframe {
 }
 
 @media (max-width:1000px) {
-    /* .container-info {
+    .container-info {
         background-color: pink;
-    } */
+    }
     .navinfo {
         display: flex;
         background-color: #333;
@@ -284,18 +305,23 @@ iframe {
 
 @media (max-width:888px) {
 
-    /* .container-info {
+    .container-info {
         background-color: orange;
-    } */
+    }
+
+    #vid-src {
+        left: 120px;
+    }
 
     .container-info h1 {
         left: 1%;
-
+            
     }
 
     .container-info p {
-        left: 5%;
+        left: 9%;
         font-size: 2vw;
+        width: 700px;
 
     }
 
@@ -316,28 +342,32 @@ iframe {
 
 @media  (max-width: 770px){
 
-    /* .container-info {
+    .container-info .intro-brief {
+        width: 600px;
+    }
+    .container-info {
         background-color: aqua;
-    } */
+    }
 
     .container-info p {
         font-size: 2vw;
     }
-    
 }
-@media (max-width:690px) {
-    /* .container-info {
-        background-color: red;
-    } */
 
-    .intro-brief {
-        left: 0%;
+
+@media (max-width:690px) {
+    .container-info {
+        background-color: red;
+    }
+
+    .container-info .intro-brief {
+        left: 3.5%;
         text-align: center;
     }
 
     .container-info p {
         font-size: 14px;
-        left: 1.4%;
+        left: 8%;
     }
 
     .container-info h2{
@@ -354,4 +384,115 @@ iframe {
             left: 9%;
     }
 
+}
+
+@media (max-width:660px) {
+    .container-info {
+        background-color: rebeccapurple;
+    }
+
+    .container-info p {
+        width: 300px;
+        text-align: center;
+        left: 26%;
+    }
+
+    iframe {
+        height: 170px;
+        width: 230px;
+        left: 31%;
+    }
+}
+
+@media (max-width:590px) {
+
+    .container-info {
+        background-color: yellow;
+    }
+
+    .container-info .title {
+        left: -10px;
+    }
+
+    .container-info .intro-brief {
+        width: 420px;
+        left: 60px;
+    }
+
+    .container-info p {
+        left: 130px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .container-info {
+        background-color: rosybrown;
+    }
+
+    .container-info .intro-brief {
+        left: 30px;
+    }
+
+    .container-info p {
+        left: 90px;
+    }
+
+    iframe {
+        left: 125px;
+    }
+
+    #vid-src {
+        left: 80px;
+    }
+}
+
+
+
+/* PHONE RESPONSIVENESS */
+
+
+@media (max-width: 414px) {
+    .container-info p {
+        left: 56px;
+    }
+
+    iframe {
+        left: 90px;
+    }
+
+    .container-info .intro-brief {
+        width: 230px;
+        left: 80px;
+    }
+
+    #vid-src {
+        left: 52px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .container-info p{
+        left: 35px;
+    }
+
+    .container-info .intro-brief {
+        left: 70px;
+    }
+
+    .container-info .title {
+        width: 290px;
+        left: 14px;
+    }
+
+    iframe {
+        left: 75px;
+    }
+
+    #vid-src {
+        left: 38px;
+    }
 }

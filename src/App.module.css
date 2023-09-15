@@ -259,7 +259,7 @@ label.logo a {
 
 @media (max-width:1250px) {
     .navbar {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .hero-background h1 {
@@ -333,7 +333,7 @@ label.logo a {
 @media (max-width:1005px) {
 
     .navbar {
-        background-color: beige;
+        /* background-color: beige; */
     }
 
     .hero-background h1 {
@@ -361,7 +361,7 @@ label.logo a {
 
 @media (max-width: 965px) {
     .navbar {
-        background-color: gray;
+        /* background-color: gray; */
     }
 
     .hero-background h1 {
@@ -435,7 +435,7 @@ label.logo a {
 
 @media (max-width: 870px) {
     .navbar {
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
     .hero-background h1 {
@@ -464,7 +464,7 @@ label.logo a {
     }
 
     .second-hero-background {
-        background-color: aqua;
+        /* background-color: aqua; */
         height: 1800px;
     }
 
@@ -527,7 +527,11 @@ label.logo a {
 
 @media (max-width: 800px) {
     .navbar {
-        background-color: green;
+        /* background-color: green; */
+    }
+
+    label.logo {
+        left: -20px;
     }
 
     .hero-background h1 {
@@ -559,7 +563,7 @@ label.logo a {
 
 @media (max-width: 770px) {
     .navbar {
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     .hero-background h1 {
@@ -591,7 +595,7 @@ label.logo a {
 
 @media (max-width: 730px) {
     .navbar {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .hero-background h1 {
@@ -624,7 +628,7 @@ label.logo a {
 
 @media (max-width:660px) {
     .navbar {
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     .hero-background h1 {
@@ -635,13 +639,17 @@ label.logo a {
         left: -2%;
     }
 
+    .second-hero-background p {
+        width: 370px;
+        left: 19%;
+    }
 
     
 }
 
 @media (max-width:630px) {
     .navbar {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .hero-background h1 {
@@ -657,8 +665,12 @@ label.logo a {
 }
 
 @media (max-width:575px) {
-    .navbar {
-        background-color: green;
+    .second-hero-background {
+        /* background-color: red; */
+    }
+    
+    label.logo {
+        left: -63px;
     }
 
     .hero-background h1 {
@@ -690,6 +702,8 @@ label.logo a {
 
     .second-hero-background p {
         font-size: 18px;
+        left: 9%;
+        width: 400px;
     }
 
     .info-stuff {
@@ -699,11 +713,22 @@ label.logo a {
 
 /* PHONE RESPONSIVENESS */
 
+@media (max-width: 414px) {
+
+    .second-hero-background p {
+        left: 1.25px;
+    }
+}
+
 @media (max-width: 395px) {
     .second-hero-background p {
         font-size: 17px;
         width: 385px;
         left: 4px;
+    }
+
+    label.logo {
+        left: -90px;
     }
 }
 
@@ -724,5 +749,12 @@ label.logo a {
 
     .info-stuff {
         margin-bottom: -350px;
+    }
+}
+
+@media (max-width:360px) {
+    .second-hero-background p {
+        left: 4px;
+        width: 350px;
     }
 }

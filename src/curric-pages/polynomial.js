@@ -16,7 +16,7 @@ export function PolynomialMenu () {
         <div className={InfoPages["container-info"]}>
             
             <h1 className={InfoPages["title"]}>Intro to Polynomials, Exponents, and Exponent Laws</h1>
-            <p className={InfoPages["intro-brief"]}>This section will cover exponents, exponent laws, polynomials, and polynomial properties.Polynomials are the foundation for almost future concepts in Math.</p>
+            <p className={InfoPages["intro-brief"]}>This section will cover exponents, exponent laws, polynomials, and polynomial properties. Polynomials are the foundation for almost future concepts in Math.</p>
             <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
             <h2>Exponents</h2>
             <p>Exponents are repeated multplication similar to the way how multplication is repeated additon,</p>
@@ -47,6 +47,7 @@ export function PolynomialMenu () {
             <p>This video will help explain the rules and concepts.</p>
             <iframe src="https://www.youtube.com/embed/BSCSNAF_aQg" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             <p id={InfoPages['vid-src']}><i>Organic Chemistry Tutor</i> - Youtube</p>
+            <a className={InfoPages['sheet-link']} href="https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61f1f84869d8f14e58cc1843/1643247689235/3.3+exponent+laws+worksheet+">Exponent Laws Practice Worksheet</a>
         </div>
     </div>
 }
