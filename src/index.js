@@ -11,6 +11,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { EquationMenu } from './curric-pages/equation';
+import { SlopeMenu } from './curric-pages/slope';
+import { LineMenu } from './curric-pages/line-equation';
+import { SystemsMenu } from './curric-pages/systems';
+import { FactorMenu } from './curric-pages/factor';
 
 
 const router = createBrowserRouter([
@@ -32,6 +36,27 @@ const router = createBrowserRouter([
   {
     path: "/equation",
     element: <EquationMenu/>,
+  }, 
+
+  {
+    path: "/slope",
+    element: <SlopeMenu/>,
+  }, 
+
+  {
+    path: "/line-equation",
+    element: <LineMenu/>,
+  }, 
+
+
+  {
+    path: "/systems",
+    element: <SystemsMenu/>,
+  }, 
+
+  {
+    path: "/factor",
+    element: <FactorMenu/>,
   }, 
 
 ]);

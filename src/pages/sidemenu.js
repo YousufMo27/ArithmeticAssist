@@ -17,18 +17,21 @@ export function Sidemenu () {
                 <Link  to='/Equation' style={{ textDecoration: 'none' }}>
                 <button id='btn-two' className={InfoPages['item-buttons']}>Equation Solving</button>
                 </Link>
-                <button className={InfoPages['item-buttons']}>Working with Data</button>
+                <Link to="/slope" style={{ textDecoration: 'none' }}>
                 <button className={InfoPages['item-buttons']}>Slope of a Line</button>
+                </Link>
+                <Link to="/line-equation" style={{ textDecoration: 'none' }}>
                 <button className={InfoPages['item-buttons']}>Equation of a Line</button>
-                <button className={InfoPages['item-buttons']}>Geometry</button>
+                </Link>
             </ul>
             <h1 className={InfoPages['title-name']}>Grade 10 Content</h1>
             <ul>
-                <Link to="/polynomial" style={{ textDecoration: 'none' }}>
+                <Link to="/systems" style={{ textDecoration: 'none' }}>
                 <button className={InfoPages['item-buttons']}>Systems</button>
                 </Link>
-                <button className={InfoPages['item-buttons']}>More on Geometry</button>
+                <Link to="/factor" style={{ textDecoration: 'none' }}>
                 <button className={InfoPages['item-buttons']}>Factoring</button>
+                </Link>
                 <button className={InfoPages['item-buttons']}>Quadratics</button>
                 <button className={InfoPages['item-buttons']}>More on Quadratics</button>
                 <button className={InfoPages['item-buttons']}>Trigonometry</button>
