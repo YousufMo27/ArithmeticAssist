@@ -183,7 +183,19 @@ iframe {
 
 .math-txt {
     position: relative;
-    left: -34%;
+    left: -30vw;
+}
+
+.math-txt-domain {
+    position: relative;
+    right: 580px;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+
+.container-info #trig-img {
+    position: relative;
+    left: -2%;
 }
 
 @media (max-width: 1360px) {

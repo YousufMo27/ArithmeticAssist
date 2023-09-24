@@ -11,7 +11,7 @@ export function FactorMenu () {
         document.body.style.overflow = "hidden";
           }, [])
 
-    return <div className={InfoPages["slope-container"]}>
+    return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>
         <Sidemenu/>
@@ -37,7 +37,20 @@ export function FactorMenu () {
         <MathComponent tex={String.raw`= (y)(x) + 3(y)`}/>
         <MathComponent tex={String.raw`= xy + 3y`}/>
         </div>
-        <h3>Factoring out terms</h3>
+        <h3>Factoring out terms from an Equation</h3>
+        <p>Like when you mulitplying a value to an equation, you can also bring that value out.</p>
+        <p>Take the previous equation for example.</p>
+        <div className={InfoPages['math-txt']}>
+        <MathComponent tex={String.raw`= xy + 3y`}/>
+        </div>
+        <p>When you factor it's kind of liking 'dividing' the term out.</p>
+        <div className={InfoPages['math-txt']}>
+        <MathComponent tex={String.raw`\frac{xy}{y} = x`}/>
+        <MathComponent tex={String.raw`\frac{3y}{y} = 3`}/>
+        <MathComponent tex={String.raw`xy + 3y = y(x+ 3)`}/>
+        </div>
+        <p>This is still the same expression as above, but it's easier to understand,</p>
+        <p>and much better to help find solutions.</p>
         </div>
     </div>
 }

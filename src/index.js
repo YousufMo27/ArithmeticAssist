@@ -15,6 +15,14 @@ import { SlopeMenu } from './curric-pages/slope';
 import { LineMenu } from './curric-pages/line-equation';
 import { SystemsMenu } from './curric-pages/systems';
 import { FactorMenu } from './curric-pages/factor';
+import { QuadraticMenu } from './curric-pages/quadratics';
+import { TrigMenu } from './curric-pages/trig';
+import { FunctionMenu } from './curric-pages/functions';
+import { RationalMenu } from './curric-pages/rational';
+import { TransMenu } from './curric-pages/transformations';
+import { ExponentialMenu } from './curric-pages/exponentials';
+import { TrigFuncMenu } from './curric-pages/TrigFunc';
+import { TrigIdenMenu } from './curric-pages/trigIden';
 
 
 const router = createBrowserRouter([
@@ -57,6 +65,46 @@ const router = createBrowserRouter([
   {
     path: "/factor",
     element: <FactorMenu/>,
+  }, 
+
+  {
+    path: "/quadratic",
+    element: <QuadraticMenu/>
+  }, 
+
+  {
+    path: "/trig",
+    element: <TrigMenu/>
+  }, 
+
+  {
+    path: "/functions",
+    element: <FunctionMenu/>
+  }, 
+
+  {
+    path: "/rationals",
+    element: <RationalMenu/>
+  }, 
+
+  {
+    path: "/transformations",
+    element: <TransMenu/>
+  }, 
+
+  {
+    path: "/exponential",
+    element: <ExponentialMenu/>
+  }, 
+
+  {
+    path: "/trig-functions",
+    element: <TrigFuncMenu/>
+  }, 
+
+  {
+    path: "/trig-identities",
+    element: <TrigIdenMenu/>
   }, 
 
 ]);
