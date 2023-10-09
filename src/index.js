@@ -23,6 +23,10 @@ import { TransMenu } from './curric-pages/transformations';
 import { ExponentialMenu } from './curric-pages/exponentials';
 import { TrigFuncMenu } from './curric-pages/TrigFunc';
 import { TrigIdenMenu } from './curric-pages/trigIden';
+import { HigherDegreeMenu } from './curric-pages/highdegree';
+import { LogMenu } from './curric-pages/log';
+import { CalculusMenu } from './curric-pages/calculus';
+import { DerivativeMenu } from './curric-pages/deriv';
 
 
 const router = createBrowserRouter([
@@ -105,6 +109,26 @@ const router = createBrowserRouter([
   {
     path: "/trig-identities",
     element: <TrigIdenMenu/>
+  }, 
+
+  {
+    path: "/higher-degree",
+    element: <HigherDegreeMenu/>
+  }, 
+
+  {
+    path: "/logs",
+    element: <LogMenu/>
+  }, 
+
+  {
+    path: "/calculus",
+    element: <CalculusMenu/>
+  }, 
+
+  {
+    path: "/derivative",
+    element: <DerivativeMenu/>
   }, 
 
 ]);

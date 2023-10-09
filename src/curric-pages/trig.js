@@ -9,8 +9,17 @@ import trig from '../images/trig.png'
 export function TrigMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
-          }, [])
+        if(document.getElementById('btn-eight')) {
+            document.getElementById('btn-eight').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-eight').style.color = 'white';
+            document.getElementById('btn-eight').style.fontWeight = 'bold';
 
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-eight').style.backgroundColor = '';
+            });
+        }
+          }, [])
     return <div className={InfoPages["container"]}>
     <Navbar/>
     <Secondnavbar/>

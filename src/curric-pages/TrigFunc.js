@@ -10,8 +10,17 @@ import { MathComponent } from "mathjax-react";
 export function TrigFuncMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
-          }, [])
+        if(document.getElementById('btn-thirteen')) {
+            document.getElementById('btn-thirteen').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-thirteen').style.color = 'white';
+            document.getElementById('btn-thirteen').style.fontWeight = 'bold';
 
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-thirteen').style.backgroundColor = '';
+            });
+        }
+          }, [])
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

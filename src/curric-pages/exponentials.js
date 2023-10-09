@@ -10,6 +10,16 @@ import { MathComponent } from "mathjax-react";
 export function ExponentialMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-twelve')) {
+            document.getElementById('btn-twelve').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-twelve').style.color = 'white';
+            document.getElementById('btn-twelve').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-twelve').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>

@@ -10,6 +10,16 @@ import { MathComponent } from "mathjax-react";
 export function RationalMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-ten')) {
+            document.getElementById('btn-ten').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-ten').style.color = 'white';
+            document.getElementById('btn-ten').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-ten').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>

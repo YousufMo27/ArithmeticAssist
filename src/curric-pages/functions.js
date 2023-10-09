@@ -10,6 +10,16 @@ import { MathComponent } from "mathjax-react";
 export function FunctionMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-nine')) {
+            document.getElementById('btn-nine').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-nine').style.color = 'white';
+            document.getElementById('btn-nine').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-nine').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>
@@ -95,6 +105,15 @@ export function FunctionMenu () {
         <div className={InfoPages['math-txt']}>
             <MathComponent tex={String.raw`f^{-1}(x) = x - 5`}/>
         </div>
+        <h3>Even and Odd Functions</h3>
+        <p>There's a really simple way to check if a function is even or odd.</p>
+        <p>Say for example your given a function:</p>
+        <div className={InfoPages['math-txt']}>
+            <MathComponent tex={String.raw`f(x) = x^2`}/>
+            <MathComponent tex={String.raw`\text{if}\ f(-x) = -f(x), \text{the the function is} \ odd`}/>
+            <MathComponent tex={String.raw`\text{if}\ f(-x) = f(x), \text{the the function is} \ even`}/>
+        </div>
+        <p>If the function doesn't follow any of the properties than it's neither.</p>
         </div>
     </div>
 }

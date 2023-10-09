@@ -10,6 +10,16 @@ import quadratic from '../images/quadratic.png'
 export function QuadraticMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-seven')) {
+            document.getElementById('btn-seven').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-seven').style.color = 'white';
+            document.getElementById('btn-seven').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-seven').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>
@@ -28,7 +38,6 @@ export function QuadraticMenu () {
         <p>Since the quadratic is just the square, and 'x' value will always result in a positive 'y'.</p>
         <p>Resuliting in a much more symmetric graphical representation as seen below.</p>
         <img className={InfoPages['img-of-graph']} src={quadratic} alt="dd"/>
-
         <h3>Quadratic Form</h3>
         <p>Since Linear Equations are just:</p>
         <div className={InfoPages['math-txt']}>

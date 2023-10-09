@@ -7,7 +7,18 @@ import { React, useEffect } from 'react'
 export function PolynomialMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-one')) {
+            document.getElementById('btn-one').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-one').style.color = 'white';
+            document.getElementById('btn-one').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-one').style.backgroundColor = '';
+            });
+        }
           }, [])
+
 
     return <div className={InfoPages["container"]}>
     <Navbar/>

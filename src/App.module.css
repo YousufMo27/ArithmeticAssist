@@ -258,9 +258,7 @@ label.logo a {
 /* MEDIA QUERIES */
 
 @media (max-width:1250px) {
-    .navbar {
-        /* background-color: red; */
-    }
+
 
     .hero-background h1 {
         left: 170px;

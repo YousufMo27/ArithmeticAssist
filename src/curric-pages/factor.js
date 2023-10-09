@@ -9,6 +9,16 @@ import { MathComponent } from "mathjax-react";
 export function FactorMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-six')) {
+            document.getElementById('btn-six').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-six').style.color = 'white';
+            document.getElementById('btn-six').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-six').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>

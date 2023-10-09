@@ -12,6 +12,16 @@ import parallel from '../images/parallel.png'
 export function SystemsMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-five')) {
+            document.getElementById('btn-five').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-five').style.color = 'white';
+            document.getElementById('btn-five').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-five').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["slope-container"]}>

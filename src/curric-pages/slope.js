@@ -9,6 +9,16 @@ import { MathComponent } from "mathjax-react";
 export function SlopeMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-three')) {
+            document.getElementById('btn-three').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-three').style.color = 'white';
+            document.getElementById('btn-three').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-three').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["slope-container"]}>

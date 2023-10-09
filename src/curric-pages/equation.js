@@ -9,8 +9,17 @@ import { MathComponent } from "mathjax-react";
 export function EquationMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
-          }, [])
+        if(document.getElementById('btn-two')) {
+            document.getElementById('btn-two').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-two').style.color = 'white';
+            document.getElementById('btn-two').style.fontWeight = 'bold';
 
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-two').style.backgroundColor = '';
+            });
+        }
+          }, [])
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

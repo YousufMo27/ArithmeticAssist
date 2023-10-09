@@ -10,6 +10,16 @@ import { MathComponent } from "mathjax-react";
 export function TrigIdenMenu () {
     useEffect(() => {
         document.body.style.overflow = "hidden";
+        if(document.getElementById('btn-fifteen')) {
+            document.getElementById('btn-fifteen').style.backgroundColor = '#3588AD';
+            document.getElementById('btn-fifteen').style.color = 'white';
+            document.getElementById('btn-fifteen').style.fontWeight = 'bold';
+
+            window.addEventListener('beforeunload', () => {
+                // This code will run before the page is unloaded
+                document.getElementById('btn-fifteen').style.backgroundColor = '';
+            });
+        }
           }, [])
 
     return <div className={InfoPages["equation-container"]}>
