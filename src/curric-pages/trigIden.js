@@ -22,6 +22,20 @@ export function TrigIdenMenu () {
         }
           }, [])
 
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-14')) {
+                document.getElementById('navbtn-14').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-14').style.color = 'white';
+                document.getElementById('navbtn-14').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-14').style.backgroundColor = '';
+                });
+            }
+              }, [])
+
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

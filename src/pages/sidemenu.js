@@ -1,10 +1,10 @@
 import InfoPages from '../info-pages.module.css'
-
+import React, { useRef } from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom'
 
 export function Sidemenu () {
-    
-    
+
     return <div className={InfoPages['app']}>
     
     <div className={InfoPages['side-menu']}>
@@ -54,7 +54,7 @@ export function Sidemenu () {
                 <button id='btn-twelve' className={InfoPages['item-buttons']}>Exponential Functions</button>
                 </Link>
                 <Link to="/trig-functions" style={{ textDecoration: 'none' }}>
-                <button id='btn-thirteen' className={InfoPages['item-buttons']}>Trig Functions</button>
+                <button id='btn-thirteen' className={InfoPages['item-buttons']} >Trig Functions</button>
                 </Link>
                 <Link to="/trig-identities" style={{ textDecoration: 'none' }}>
                 <button id='btn-fifteen' className={InfoPages['item-buttons']}>Trig Identities</button>

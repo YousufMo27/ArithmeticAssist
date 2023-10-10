@@ -174,11 +174,12 @@ iframe {
 }
 
 .navinfo {
+    background-color: #E7E9EB;
     display: none;
 }
 
 .navinfo a:hover {
-    background-color: #02150E;
+    background-color: lightblue;
 }
 
 .math-txt {
@@ -286,7 +287,7 @@ iframe {
 
     .navinfo {
         display: flex;
-        background-color: #333;
+        background-color: #E7E9EB;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
@@ -300,7 +301,7 @@ iframe {
 
     .navinfo a {
         display: inline-block;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px;
         text-decoration: none;
@@ -333,6 +334,10 @@ iframe {
 
     iframe {
         left: 15%;
+    }
+
+    .math-txt {
+        left: -20%;
     }
 }
 
@@ -415,6 +420,10 @@ iframe {
 
     iframe {
             left: 9%;
+    }
+
+    .math-txt {
+        left: 0%;
     }
 
 }

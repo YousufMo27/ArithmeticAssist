@@ -21,6 +21,21 @@ export function FactorMenu () {
         }
           }, [])
 
+
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-six')) {
+                document.getElementById('navbtn-six').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-six').style.color = 'white';
+                document.getElementById('navbtn-six').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-six').style.backgroundColor = '';
+                });
+            }
+              }, [])
+
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

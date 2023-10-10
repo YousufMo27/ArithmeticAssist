@@ -11,13 +11,27 @@ export function PolynomialMenu () {
             document.getElementById('btn-one').style.backgroundColor = '#3588AD';
             document.getElementById('btn-one').style.color = 'white';
             document.getElementById('btn-one').style.fontWeight = 'bold';
-
+            
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-one').style.backgroundColor = '';
             });
         }
           }, [])
+
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-one')) {
+                document.getElementById('navbtn-one').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-one').style.color = 'white';
+                document.getElementById('navbtn-one').style.fontWeight = 'bold';
+                
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-one').style.backgroundColor = '';
+                });
+            }
+              }, [])
 
 
     return <div className={InfoPages["container"]}>

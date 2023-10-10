@@ -20,6 +20,20 @@ export function EquationMenu () {
             });
         }
           }, [])
+
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-two')) {
+                document.getElementById('navbtn-two').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-two').style.color = 'white';
+                document.getElementById('navbtn-two').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-two').style.backgroundColor = '';
+                });
+            }
+              }, [])
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

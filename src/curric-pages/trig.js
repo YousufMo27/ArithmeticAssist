@@ -20,6 +20,20 @@ export function TrigMenu () {
             });
         }
           }, [])
+
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-eight')) {
+                document.getElementById('navbtn-eight').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-eight').style.color = 'white';
+                document.getElementById('navbtn-eight').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-eight').style.backgroundColor = '';
+                });
+            }
+              }, [])
     return <div className={InfoPages["container"]}>
     <Navbar/>
     <Secondnavbar/>

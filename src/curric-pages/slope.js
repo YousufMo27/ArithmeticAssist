@@ -21,6 +21,20 @@ export function SlopeMenu () {
         }
           }, [])
 
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-three')) {
+                document.getElementById('navbtn-three').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-three').style.color = 'white';
+                document.getElementById('navbtn-three').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-three').style.backgroundColor = '';
+                });
+            }
+              }, [])
+
     return <div className={InfoPages["slope-container"]}>
         <Navbar/>
         <Secondnavbar/>

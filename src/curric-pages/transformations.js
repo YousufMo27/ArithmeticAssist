@@ -22,6 +22,20 @@ export function TransMenu () {
         }
           }, [])
 
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-11')) {
+                document.getElementById('navbtn-11').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-11').style.color = 'white';
+                document.getElementById('navbtn-11').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-11').style.backgroundColor = '';
+                });
+            }
+              }, [])
+
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
         <Secondnavbar/>

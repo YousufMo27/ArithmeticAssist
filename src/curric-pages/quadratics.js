@@ -21,6 +21,19 @@ export function QuadraticMenu () {
             });
         }
           }, [])
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-seven')) {
+                document.getElementById('navbtn-seven').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-seven').style.color = 'white';
+                document.getElementById('navbtn-seven').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-seven').style.backgroundColor = '';
+                });
+            }
+              }, [])
 
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>

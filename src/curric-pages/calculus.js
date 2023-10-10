@@ -18,12 +18,30 @@ export function CalculusMenu () {
             document.getElementById('btn-18').style.color = 'white';
             document.getElementById('btn-18').style.fontWeight = 'bold';
 
+            document.getElementById('btn-18').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-18').style.backgroundColor = '';
             });
         }
           }, [])
+
+          useEffect(() => {
+            document.body.style.overflow = "hidden";
+            if(document.getElementById('navbtn-18')) {
+                document.getElementById('navbtn-18').style.backgroundColor = '#3588AD';
+                document.getElementById('navbtn-18').style.color = 'white';
+                document.getElementById('navbtn-18').style.fontWeight = 'bold';
+
+                window.addEventListener('beforeunload', () => {
+                    // This code will run before the page is unloaded
+                    document.getElementById('navbtn-18').style.backgroundColor = '';
+                });
+            }
+              }, [])
 
     return <div className={InfoPages["equation-container"]}>
         <Navbar/>
