@@ -26,5 +26,6 @@ export default function Secondnavbar () {
         <a href='/'>D</a>
         <a href='/'>D</a>
         <a href='/'>D</a>
+        
     </nav>
 }  

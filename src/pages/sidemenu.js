@@ -66,6 +66,9 @@ export function Sidemenu () {
                 <Link to="/higher-degree" style={{ textDecoration: 'none' }}>
                 <button id='btn-sixteen' className={InfoPages['item-buttons']}>Higher Degree Functions</button>
                 </Link>
+                <Link to="/more-trig" style={{ textDecoration: 'none' }}>
+                <button id='btn-21' className={InfoPages['item-buttons']}>More on Trig</button>
+                </Link>
                 <Link to="/logs" style={{ textDecoration: 'none' }}>
                 <button id='btn-seventeen' className={InfoPages['item-buttons']}>Logarithms</button>
                 </Link>
@@ -75,7 +78,9 @@ export function Sidemenu () {
                 <Link to="/derivative" style={{ textDecoration: 'none' }}>
                 <button id='btn-nineteen' className={InfoPages['item-buttons']}>Derivatives</button>
                 </Link>
+                <Link to="/curvesketch" style={{ textDecoration: 'none' }}>
                 <button id='btn-twenty' className={InfoPages['item-buttons']}>Curve Sketching</button>
+                </Link>
             </ul>
     </div>
 </div>

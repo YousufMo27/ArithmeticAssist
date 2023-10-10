@@ -27,6 +27,8 @@ import { HigherDegreeMenu } from './curric-pages/highdegree';
 import { LogMenu } from './curric-pages/log';
 import { CalculusMenu } from './curric-pages/calculus';
 import { DerivativeMenu } from './curric-pages/deriv';
+import { CurveMenu } from './curric-pages/curve';
+import { MoreTrigMenu } from './curric-pages/moretrig';
 
 
 const router = createBrowserRouter([
@@ -129,6 +131,15 @@ const router = createBrowserRouter([
   {
     path: "/derivative",
     element: <DerivativeMenu/>
+  }, 
+
+  {
+    path: "/curvesketch",
+    element: <CurveMenu/>
+  }, 
+  {
+    path: "/more-trig",
+    element: <MoreTrigMenu/>
   }, 
 
 ]);

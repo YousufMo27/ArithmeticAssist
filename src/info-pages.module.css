@@ -282,6 +282,8 @@ iframe {
     .container-info {
         background-color: pink;
     }
+
+
     .navinfo {
         display: flex;
         background-color: #333;
@@ -290,6 +292,7 @@ iframe {
         white-space: nowrap;
         
     }
+
 
     .navinfo::-webkit-scrollbar {
         display: none;
@@ -302,6 +305,7 @@ iframe {
         padding: 14px;
         text-decoration: none;
     }
+
 
     .side-menu {
         display: none;
