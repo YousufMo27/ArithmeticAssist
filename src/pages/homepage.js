@@ -7,6 +7,7 @@ import { React, useEffect } from 'react';
 function Home () {
 
     useEffect(() => {
+      document.title = 'ArithmeticAssist'
       document.body.style.overflowY = "visible";
       document.body.style.overflowX = "hidden";
     }, [])
