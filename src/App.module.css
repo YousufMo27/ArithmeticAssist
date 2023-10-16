@@ -711,6 +711,25 @@ label.logo a {
 
 /* PHONE RESPONSIVENESS */
 
+@media (max-width: 428px) {
+
+    .second-hero-background p {
+        left: 17px;
+    }
+
+    .hero-background h1 {
+        font-size: 1.1rem;
+        width: 330px;
+        left: 40px;
+    }
+    label.logo {
+        left: -90px;
+    }
+    
+}
+
+/* PHONE RESPONSIVENESS */
+
 @media (max-width: 414px) {
 
     .second-hero-background p {

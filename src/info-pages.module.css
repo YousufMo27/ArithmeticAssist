@@ -690,6 +690,38 @@ iframe {
 /* PHONE RESPONSIVENESS */
 
 
+@media (max-width: 428px) {
+
+    .container-info p {
+        left: 30px;
+    }
+
+    .container-info h3 {
+        left: 1px;
+    }
+
+    .container-info h2 {
+        left: 1px;
+    }
+
+    .container-info .title {
+        left: -20px;
+    }
+
+    .container-info .intro-brief {
+        left: 48px;
+        width: 350px;
+    }
+    
+    iframe {
+        left: 100px;
+    }
+
+    #vid-src {
+        left: 28px;
+    }
+}
+
 @media (max-width: 414px) {
     .container-info p {
         left: 31px;
