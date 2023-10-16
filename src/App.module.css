@@ -711,7 +711,7 @@ label.logo a {
 
 /* PHONE RESPONSIVENESS */
 
-@media (max-width: 428px) {
+@media (max-width: 440px) {
 
     .second-hero-background p {
         left: 17px;
