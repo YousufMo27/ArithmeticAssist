@@ -11,6 +11,7 @@ import parallel from '../images/parallel.png'
 
 export function SystemsMenu () {
     useEffect(() => {
+        document.title = 'Systems';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-five')) {
             document.getElementById('btn-five').style.backgroundColor = '#3588AD';
@@ -28,6 +29,7 @@ export function SystemsMenu () {
           }, [])
 
           useEffect(() => {
+            
             document.body.style.overflow = "hidden";
             if(document.getElementById('navbtn-five')) {
                 document.getElementById('navbtn-five').style.backgroundColor = '#3588AD';

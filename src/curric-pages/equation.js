@@ -8,6 +8,7 @@ import { MathComponent } from "mathjax-react";
 
 export function EquationMenu () {
     useEffect(() => {
+        document.title = 'Equation Solving';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-two')) {
             document.getElementById('btn-two').style.backgroundColor = '#3588AD';

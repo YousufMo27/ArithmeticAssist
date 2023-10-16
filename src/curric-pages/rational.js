@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function RationalMenu () {
     useEffect(() => {
+        document.title = 'Rationals';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-ten')) {
             document.getElementById('btn-ten').style.backgroundColor = '#3588AD';

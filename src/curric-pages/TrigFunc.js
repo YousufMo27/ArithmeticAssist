@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function TrigFuncMenu () {
     useEffect(() => {
+        document.title = 'Trig Functions';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-thirteen')) {
             document.getElementById('btn-thirteen').style.backgroundColor = '#3588AD';

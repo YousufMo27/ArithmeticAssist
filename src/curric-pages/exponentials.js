@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function ExponentialMenu () {
     useEffect(() => {
+        document.title = 'Exponentials';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-twelve')) {
             document.getElementById('btn-twelve').style.backgroundColor = '#3588AD';

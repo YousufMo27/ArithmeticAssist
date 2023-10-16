@@ -7,6 +7,7 @@ import { MathComponent } from "mathjax-react";
 
 export function CurveMenu () {
     useEffect(() => {
+        document.title = 'Curve Sketching';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-twenty')) {
             document.getElementById('btn-twenty').style.backgroundColor = '#3588AD';

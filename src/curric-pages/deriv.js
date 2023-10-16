@@ -7,6 +7,7 @@ import { MathComponent } from "mathjax-react";
 
 export function DerivativeMenu () {
     useEffect(() => {
+        document.title = 'Derivatives';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-nineteen')) {
             document.getElementById('btn-nineteen').style.backgroundColor = '#3588AD';

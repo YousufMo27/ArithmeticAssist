@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function TransMenu () {
     useEffect(() => {
+        document.title = 'Transformations';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-eleven')) {
             document.getElementById('btn-eleven').style.backgroundColor = '#3588AD';

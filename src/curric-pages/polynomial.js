@@ -6,6 +6,7 @@ import { React, useEffect } from 'react'
 
 export function PolynomialMenu () {
     useEffect(() => {
+        document.title = 'Polynomials';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-one')) {
             document.getElementById('btn-one').style.backgroundColor = '#3588AD';

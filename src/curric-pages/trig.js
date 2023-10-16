@@ -8,6 +8,7 @@ import trig from '../images/trig.png'
 
 export function TrigMenu () {
     useEffect(() => {
+        document.title = 'Trig';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-eight')) {
             document.getElementById('btn-eight').style.backgroundColor = '#3588AD';

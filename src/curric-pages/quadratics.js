@@ -9,6 +9,7 @@ import quadratic from '../images/quadratic.png'
 
 export function QuadraticMenu () {
     useEffect(() => {
+        document.title = 'Quadratics';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-seven')) {
             document.getElementById('btn-seven').style.backgroundColor = '#3588AD';

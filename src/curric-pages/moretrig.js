@@ -8,6 +8,7 @@ import { MathComponent } from "mathjax-react";
 
 export function MoreTrigMenu () {
     useEffect(() => {
+        document.title = 'More on Trig';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-21')) {
             document.getElementById('btn-21').style.backgroundColor = '#3588AD';

@@ -8,6 +8,7 @@ import { MathComponent } from "mathjax-react";
 
 export function LineMenu () {
     useEffect(() => {
+        document.title = 'Line Equations';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-four')) {
             document.getElementById('btn-four').style.backgroundColor = '#3588AD';

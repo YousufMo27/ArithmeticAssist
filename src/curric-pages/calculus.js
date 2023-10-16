@@ -12,6 +12,7 @@ import remov from '../images/remov.png'
 
 export function CalculusMenu () {
     useEffect(() => {
+        document.title = 'Calculus';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-18')) {
             document.getElementById('btn-18').style.backgroundColor = '#3588AD';

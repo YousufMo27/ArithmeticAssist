@@ -8,6 +8,7 @@ import { MathComponent } from "mathjax-react";
 
 export function SlopeMenu () {
     useEffect(() => {
+        document.title = 'Slope';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-three')) {
             document.getElementById('btn-three').style.backgroundColor = '#3588AD';

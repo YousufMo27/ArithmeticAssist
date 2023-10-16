@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function LogMenu () {
     useEffect(() => {
+        document.title = 'Logarithms';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-seventeen')) {
             document.getElementById('btn-seventeen').style.backgroundColor = '#3588AD';

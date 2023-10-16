@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function FunctionMenu () {
     useEffect(() => {
+        document.title = 'Functions';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-nine')) {
             document.getElementById('btn-nine').style.backgroundColor = '#3588AD';

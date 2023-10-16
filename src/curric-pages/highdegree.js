@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 
 export function HigherDegreeMenu () {
     useEffect(() => {
+        document.title = 'Higher Degree Functions';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-sixteen')) {
             document.getElementById('btn-sixteen').style.backgroundColor = '#3588AD';

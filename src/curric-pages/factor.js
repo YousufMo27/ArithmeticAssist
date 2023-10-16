@@ -8,6 +8,7 @@ import { MathComponent } from "mathjax-react";
 
 export function FactorMenu () {
     useEffect(() => {
+        document.title = 'factoring';
         document.body.style.overflow = "hidden";
         if(document.getElementById('btn-six')) {
             document.getElementById('btn-six').style.backgroundColor = '#3588AD';
