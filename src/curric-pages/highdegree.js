@@ -14,7 +14,10 @@ export function HigherDegreeMenu () {
             document.getElementById('btn-sixteen').style.backgroundColor = '#3588AD';
             document.getElementById('btn-sixteen').style.color = 'white';
             document.getElementById('btn-sixteen').style.fontWeight = 'bold';
-
+            document.getElementById('btn-sixteen').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-sixteen').style.backgroundColor = '';
@@ -43,7 +46,7 @@ export function HigherDegreeMenu () {
         <Sidemenu/>
         <div className={InfoPages["container-info"]}>
         <h1 className={InfoPages["title"]}>Higher Degree Functions</h1>
-        <p className={InfoPages["intro-brief"]}>You've seen quadratics, theres so much worse.</p>
+        <p className={InfoPages["intro-brief"]}>An introduction to functions with a degree higher than 2</p>
         <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
         <h3>Degree of a Function</h3>
         <p>The degree of a function is just the highest power, take for example the function:</p>
@@ -110,6 +113,14 @@ export function HigherDegreeMenu () {
         <h3>Interval Charts</h3>
         <p>Interval charts are used when dealing with inequalities of higher degree functions,</p>
         <p>especially when you have multiple factors. They allow you to give a more defined answer on the intervals.</p>
+        <iframe src="https://www.youtube.com/embed/imJCLnDubuA" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>rootmath</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/FxHWoUOq2iQ" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/LU9w9NSKNcI"    width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>AllThingsMathematics</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/LYixzCuc4PQ" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Math and Science</i> - Youtube</p>
         </div>
     </div>
 }

@@ -14,6 +14,11 @@ export function TrigMenu () {
             document.getElementById('btn-eight').style.color = 'white';
             document.getElementById('btn-eight').style.fontWeight = 'bold';
 
+            document.getElementById('btn-eight').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
+
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-eight').style.backgroundColor = '';
@@ -81,6 +86,12 @@ export function TrigMenu () {
             <div className={InfoPages['math-txt']}>
             <MathComponent tex={String.raw`c^2 = a^2 + b^2 -2abcos(C)`}/>
             </div>
+            <iframe  src="https://www.youtube.com/embed/GtpplO7xdqM"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <p id={InfoPages['vid-src']}><i>tecmath</i> - Youtube</p>
+            <iframe  src="https://www.youtube.com/embed/MXu2ePb6ZcU"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <p id={InfoPages['vid-src']}><i>tecmath</i> - Youtube</p>
+            <iframe  src="https://www.youtube.com/embed/VTNHGeyR0ow"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Patrick JMT</i> - Youtube</p>
         </div>
     </div>
 }

@@ -12,7 +12,10 @@ export function CurveMenu () {
             document.getElementById('btn-twenty').style.backgroundColor = '#3588AD';
             document.getElementById('btn-twenty').style.color = 'white';
             document.getElementById('btn-twenty').style.fontWeight = 'bold';
-
+            document.getElementById('btn-twenty').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-twenty').style.backgroundColor = '';
@@ -112,6 +115,13 @@ export function CurveMenu () {
         <div className={InfoPages['math-txt']}>
             <MathComponent tex={String.raw`f''(0) = 2,\; \text{then x = 0 is a max}`}/>
         </div>
+        <iframe src="https://www.youtube.com/embed/-W4d0qFzyQY" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Patrick JMT</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/o2I3lajJklE" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Joe Haas</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/8u6woY05aL0" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Professor Leonard
+            </i> - Youtube</p>
         </div>
     </div>
 }

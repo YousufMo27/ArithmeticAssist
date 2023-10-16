@@ -14,7 +14,10 @@ export function FunctionMenu () {
             document.getElementById('btn-nine').style.backgroundColor = '#3588AD';
             document.getElementById('btn-nine').style.color = 'white';
             document.getElementById('btn-nine').style.fontWeight = 'bold';
-
+            document.getElementById('btn-nine').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-nine').style.backgroundColor = '';
@@ -129,6 +132,14 @@ export function FunctionMenu () {
             <MathComponent tex={String.raw`\text{if}\ f(-x) = f(x), \text{the the function is} \ even`}/>
         </div>
         <p>If the function doesn't follow any of the properties than it's neither.</p>
+        <iframe  src="https://www.youtube.com/embed/kvGsIo1TmsM"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/9fJsrnE1go0"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Professor Dave Explains</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/djT6-YamHaA"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/fKyBOLsqRlo"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }

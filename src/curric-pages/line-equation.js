@@ -13,7 +13,10 @@ export function LineMenu () {
             document.getElementById('btn-four').style.backgroundColor = '#3588AD';
             document.getElementById('btn-four').style.color = 'white';
             document.getElementById('btn-four').style.fontWeight = 'bold';
-
+            document.getElementById('btn-four').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-four').style.backgroundColor = '';
@@ -100,8 +103,11 @@ export function LineMenu () {
         <div className={InfoPages['math-txt']}>
         <MathComponent tex={String.raw`y = 7`}/>
         </div>
+        <iframe src="https://www.youtube.com/embed/bAerID24QJ0"width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/GYNK6NDNEFk" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
-
     </div>
 }
 

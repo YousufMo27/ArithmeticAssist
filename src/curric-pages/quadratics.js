@@ -15,6 +15,11 @@ export function QuadraticMenu () {
             document.getElementById('btn-seven').style.color = 'white';
             document.getElementById('btn-seven').style.fontWeight = 'bold';
 
+            document.getElementById('btn-seven').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
+
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-seven').style.backgroundColor = '';
@@ -121,7 +126,8 @@ export function QuadraticMenu () {
         <MathComponent tex={String.raw`(-6)(1) = -6`}/>
         <MathComponent tex={String.raw`3x^2 - 6x + x - 2`}/>
         </div>
-        <p>Then you have to group the terms and individually factor, if the factors are the same your answer is correct.</p>
+        <p>Then you have to group the terms and individually factor,</p>
+        <p>if the factors are the same your answer is correct.</p>
         <div className={InfoPages['math-txt']}>
         <MathComponent tex={String.raw`(3x^2 - 6x )+ (x - 2)`}/>
         <MathComponent tex={String.raw`3x(x - 2) + (x-2)`}/>
@@ -134,6 +140,12 @@ export function QuadraticMenu () {
         <MathComponent tex={String.raw`x^2 -a^2 = (x-a)(x + a)`}/>
         </div>
         <p>This is called a difference of squares.</p>
+        <iframe src="https://www.youtube.com/embed/VdVPg04t_6w"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Micheal van Biezen</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/HLNSouzygw0"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/SDe-1lGeS0U"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Patrick JMT</i> - Youtube</p>
         </div>
     </div>
 }

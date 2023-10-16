@@ -16,7 +16,10 @@ export function SystemsMenu () {
             document.getElementById('btn-five').style.backgroundColor = '#3588AD';
             document.getElementById('btn-five').style.color = 'white';
             document.getElementById('btn-five').style.fontWeight = 'bold';
-
+            document.getElementById('btn-five').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-five').style.backgroundColor = '';
@@ -66,6 +69,10 @@ export function SystemsMenu () {
         <h3>Solving Systems of Equations Using Arithmetic</h3>
         <p>To solve a system using Arithmetic you have to use one of two methods.</p>
         <p>Substitution or Elmination.</p>
+        <iframe src="https://www.youtube.com/embed/vA-55wZtLeE"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/0rAhyj4LYnk"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Brian McLogan</i> - Youtube</p>
         </div>
     </div>
 }

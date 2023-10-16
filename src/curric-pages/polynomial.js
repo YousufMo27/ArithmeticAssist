@@ -11,7 +11,12 @@ export function PolynomialMenu () {
             document.getElementById('btn-one').style.backgroundColor = '#3588AD';
             document.getElementById('btn-one').style.color = 'white';
             document.getElementById('btn-one').style.fontWeight = 'bold';
-            
+
+            document.getElementById('btn-one').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
+
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-one').style.backgroundColor = '';
@@ -71,7 +76,7 @@ export function PolynomialMenu () {
             <p>Polynomial expressions have many properties and rules, like the distributive property for example.</p>
             <p>This video will help explain the rules and concepts.</p>
             <iframe src="https://www.youtube.com/embed/BSCSNAF_aQg" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-            <p id={InfoPages['vid-src']}><i>Organic Chemistry Tutor</i> - Youtube</p>
+            <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
             <a className={InfoPages['sheet-link']} href="https://static1.squarespace.com/static/61de416a3e2596709a9237f6/t/61f1f84869d8f14e58cc1843/1643247689235/3.3+exponent+laws+worksheet+">Exponent Laws Practice Worksheet</a>
         </div>
     </div>

@@ -5,6 +5,7 @@ import image3 from '../images/G11.jpg'
 import image4 from '../images/G12.jpg'
 
 export default function SecondHero () {
+    
     return <div className={AppCss["second-hero-background"]}>
         <div className={AppCss['info-stuff']}>
         <h1 className={AppCss['second-background-intro']}>Why We Started?</h1>

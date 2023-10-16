@@ -14,7 +14,10 @@ export function RationalMenu () {
             document.getElementById('btn-ten').style.backgroundColor = '#3588AD';
             document.getElementById('btn-ten').style.color = 'white';
             document.getElementById('btn-ten').style.fontWeight = 'bold';
-
+            document.getElementById('btn-ten').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-ten').style.backgroundColor = '';
@@ -81,6 +84,12 @@ export function RationalMenu () {
         <p>When Simplifying rational expression there are many steps to ensure</p>
         <p>you get the correct answer, the resources below will help you with,</p>
         <p>the understanding of how to reach this answer.</p>
+        <iframe  src="https://www.youtube.com/embed/x3CJKYpS0Jw"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Marshematics</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/eDwkfCzMPyk"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>All Things Mathematics</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/1KGVwaUhR-s"    width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }

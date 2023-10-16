@@ -14,7 +14,10 @@ export function TrigIdenMenu () {
             document.getElementById('btn-fifteen').style.backgroundColor = '#3588AD';
             document.getElementById('btn-fifteen').style.color = 'white';
             document.getElementById('btn-fifteen').style.fontWeight = 'bold';
-
+            document.getElementById('btn-fifteen').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-fifteen').style.backgroundColor = '';
@@ -42,7 +45,7 @@ export function TrigIdenMenu () {
         <Sidemenu/>
         <div className={InfoPages["container-info"]}>
         <h1 className={InfoPages["title"]}>Trig Identities</h1>
-        <p className={InfoPages["intro-brief"]}>Likely the most difficult concept in math</p>
+        <p className={InfoPages["intro-brief"]}>Learn how to prove trig identities</p>
         <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
         <h3>Proving an identity</h3>
         <p>To prove a trig identity you need to know the main equalities which are given to you.</p>
@@ -82,6 +85,10 @@ export function TrigIdenMenu () {
             <MathComponent  tex={String.raw`cos(a + b) = cos(a)cos(b) + sin(a)sin(b)`}/>
             <MathComponent  tex={String.raw`cos(a - b) = cos(a)cos(b) - sin(a)sin(b)`}/>
         </div>
+        <iframe src="https://www.youtube.com/embed/Rf05H8ogHLg"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/OJz-fOzFbEc"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Patrick JMT</i> - Youtube</p>
         </div>
     </div>
 }

@@ -12,7 +12,11 @@ export function DerivativeMenu () {
             document.getElementById('btn-nineteen').style.backgroundColor = '#3588AD';
             document.getElementById('btn-nineteen').style.color = 'white';
             document.getElementById('btn-nineteen').style.fontWeight = 'bold';
-
+            
+            document.getElementById('btn-nineteen').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-nineteen').style.backgroundColor = '';
@@ -41,7 +45,7 @@ export function DerivativeMenu () {
         <Sidemenu/>
         <div className={InfoPages["container-info"]}>
         <h1 className={InfoPages["title"]}>The Derivative</h1>
-        <p className={InfoPages["intro-brief"]}>this</p>
+        <p className={InfoPages["intro-brief"]}>This section teaches you a shortcut to finding derivatives</p>
         <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
         <h3>What's a Derivative</h3>
         <p>The Derivative is the method to finding the instantaneous rate of change.</p>
@@ -145,6 +149,20 @@ export function DerivativeMenu () {
             <MathComponent tex={String.raw`f'(x) = 2(x^2+2)2x`}/>                      
             <MathComponent tex={String.raw`f'(x) = 4x(x^2 +2)`}/>                      
         </div>
+        <iframe src="https://www.youtube.com/embed/-aTLjoDT1GQ"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/54KiyZy145Y"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Patrick JMT</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/h78GdGiRmpM"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/ra30soZl5zU" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Maths Genie</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/Ri2RAkZb0qg"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Maths Genie</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/RJJSiNz5oto" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Professor Leonard</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/Qgj2_4r3VBs"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
         </div>
     </div>
 }

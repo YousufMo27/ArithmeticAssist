@@ -14,7 +14,10 @@ export function TrigFuncMenu () {
             document.getElementById('btn-thirteen').style.backgroundColor = '#3588AD';
             document.getElementById('btn-thirteen').style.color = 'white';
             document.getElementById('btn-thirteen').style.fontWeight = 'bold';
-
+            document.getElementById('btn-thirteen').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-thirteen').style.backgroundColor = '';
@@ -83,6 +86,8 @@ export function TrigFuncMenu () {
             <MathComponent  tex={String.raw`T = (360)(2) = 720`}/>
         </div>
         <p>We see the period extends from 360 to 720.</p>
+        <iframe src="https://www.youtube.com/embed/Q1IfoD4qv_o" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}}  id={InfoPages['vid-src']}><i>Y=mx+c</i> - Youtube</p>
         </div>
     </div>
 }

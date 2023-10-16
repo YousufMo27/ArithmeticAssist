@@ -13,7 +13,10 @@ export function EquationMenu () {
             document.getElementById('btn-two').style.backgroundColor = '#3588AD';
             document.getElementById('btn-two').style.color = 'white';
             document.getElementById('btn-two').style.fontWeight = 'bold';
-
+            document.getElementById('btn-two').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-two').style.backgroundColor = '';
@@ -34,11 +37,11 @@ export function EquationMenu () {
                 });
             }
               }, [])
-    return <div className={InfoPages["equation-container"]}>
+    return <div className={InfoPages["equation-container"]} >
         <Navbar/>
         <Secondnavbar/>
         <Sidemenu/>
-        <div className={InfoPages["container-info"]}>
+        <div className={InfoPages["container-info"]} id="eqn-cont">
         <h1 className={InfoPages["title"]}>Solving Equations </h1>
         <p className={InfoPages["intro-brief"]}>This section will explain how to solve equations which will be given to you at this level.</p>
         <hr className={InfoPages["border-line"]} style={{marginBottom: 40}}></hr>
@@ -104,7 +107,7 @@ export function EquationMenu () {
         <iframe src="https://www.youtube.com/embed/GYNK6NDNEFk" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         <p id={InfoPages['vid-src']}><i>Organic Chemistry Tutor</i> - Youtube</p>
         <iframe src="https://www.youtube.com/embed/URwvmQQGE8c" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-        <p id={InfoPages['vid-src']}><i>Alane Tentoni</i> - Youtube</p>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Alane Tentoni</i> - Youtube</p>
         </div>
     </div>
 }

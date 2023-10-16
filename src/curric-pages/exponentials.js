@@ -14,7 +14,10 @@ export function ExponentialMenu () {
             document.getElementById('btn-twelve').style.backgroundColor = '#3588AD';
             document.getElementById('btn-twelve').style.color = 'white';
             document.getElementById('btn-twelve').style.fontWeight = 'bold';
-
+            document.getElementById('btn-twelve').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-twelve').style.backgroundColor = '';
@@ -64,7 +67,11 @@ export function ExponentialMenu () {
         <div className={InfoPages['math-txt']}>
             <MathComponent tex={String.raw`g(x) = (\frac{1}{2})^x`}/>
         </div>
-        <p>Since the function is a fraction, as it gets raised to a power, it will start to decrease.</p>
+        <p>Since the base is a fraction, as it gets raised to a power, it will start to decrease.</p>
+        <iframe src="https://www.youtube.com/embed/tAaDItpC8OI" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Professor Dave Explains</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/e5nwJKUc3bA"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }

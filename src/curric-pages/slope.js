@@ -13,7 +13,10 @@ export function SlopeMenu () {
             document.getElementById('btn-three').style.backgroundColor = '#3588AD';
             document.getElementById('btn-three').style.color = 'white';
             document.getElementById('btn-three').style.fontWeight = 'bold';
-
+            document.getElementById('btn-three').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-three').style.backgroundColor = '';
@@ -66,6 +69,8 @@ export function SlopeMenu () {
         <h3>Signs of Rise and run</h3>
         <p>When the rise and run are moving upwards and towards the right respectively, then they are positive.</p>
         <p>When the rise and run are moving downwards and towards the left respectively, then they are negative.</p>
+        <iframe src="https://www.youtube.com/embed/tR55FtVAfEE" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}}id={InfoPages['vid-src']}><i>Mr. Catley</i> - Youtube</p>
         </div>
     </div>
 }

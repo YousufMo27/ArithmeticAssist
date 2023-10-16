@@ -160,6 +160,18 @@ export function CalculusMenu () {
             <MathComponent tex={String.raw`=1`}/>
         </div>
         <p>Some more complicated examples might involve more manipulations.</p>
+        <iframe src="https://www.youtube.com/embed/oT6LclcJ-I8"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/qQgVomi8lCc"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/riXcZT2ICjA"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/NVGBq_V-F6U"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Khan Academy</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/fOrOeZA-vdY"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
+        <iframe  src="https://www.youtube.com/embed/M2BgBG2Su94"   width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }

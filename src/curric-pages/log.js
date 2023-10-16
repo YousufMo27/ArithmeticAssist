@@ -14,7 +14,11 @@ export function LogMenu () {
             document.getElementById('btn-seventeen').style.backgroundColor = '#3588AD';
             document.getElementById('btn-seventeen').style.color = 'white';
             document.getElementById('btn-seventeen').style.fontWeight = 'bold';
-
+            
+            document.getElementById('btn-seventeen').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-seventeen').style.backgroundColor = '';
@@ -90,6 +94,8 @@ export function LogMenu () {
             <MathComponent tex={String.raw`x = e^5 - 3`}/>
         </div>
         <p>To solve more complicated examples, resources are provided below.</p>
+        <iframe src="https://www.youtube.com/embed/jfnTwz79PWU"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Professor Leonard</i> - Youtube</p>
         </div>
     </div>
 }

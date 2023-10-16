@@ -14,7 +14,10 @@ export function TransMenu () {
             document.getElementById('btn-eleven').style.backgroundColor = '#3588AD';
             document.getElementById('btn-eleven').style.color = 'white';
             document.getElementById('btn-eleven').style.fontWeight = 'bold';
-
+            document.getElementById('btn-eleven').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-eleven').style.backgroundColor = '';
@@ -106,6 +109,10 @@ export function TransMenu () {
         <p>Our -1 &lt; k &lt; 1, meaning that the function vertically stretches by a factor of (1/(1/2)) = 2.</p>
         <p>The d &gt; 0, meaning the function shifts 2 units right.</p>
         <p>The c &lt; 0, meaning the function shifts 5 units down.</p>
+        <iframe src="https://www.youtube.com/embed/sTCRB6hMsC4" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p id={InfoPages['vid-src']}><i>Professor Leonard</i> - Youtube</p>
+        <iframe src="https://www.youtube.com/embed/l3G_OIeKfh0"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Lisa Ruddy</i> - Youtube</p>
         </div>
     </div>
 }

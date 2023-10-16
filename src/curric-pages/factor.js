@@ -13,7 +13,10 @@ export function FactorMenu () {
             document.getElementById('btn-six').style.backgroundColor = '#3588AD';
             document.getElementById('btn-six').style.color = 'white';
             document.getElementById('btn-six').style.fontWeight = 'bold';
-
+            document.getElementById('btn-six').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-six').style.backgroundColor = '';
@@ -76,6 +79,8 @@ export function FactorMenu () {
         </div>
         <p>This is still the same expression as above, but it's easier to understand,</p>
         <p>and much better to help find solutions.</p>
+        <iframe src="https://www.youtube.com/embed/Kf67Dv7ygK0"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>Anywhere Math</i> - Youtube</p>
         </div>
     </div>
 }

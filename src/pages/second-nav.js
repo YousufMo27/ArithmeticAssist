@@ -10,11 +10,9 @@ export default function Secondnavbar() {
     const currentContainer = navbarRef.current;
 
     const handleMouseDown = (event) => {
-        // Check if the event target is an anchor element with the 'scroll-link' class
         const isScrollLink = event.target.classList.contains('scroll-link');
       
         if (isScrollLink) {
-          // Prevent default behavior only if the user is dragging a link
           event.preventDefault();
           setisHeldMouse(true);
         }
@@ -32,7 +30,6 @@ export default function Secondnavbar() {
       }
     };
 
-    // Get all anchor tags inside the currentContainer and attach event listeners to them
     const anchorTags = document.querySelectorAll('.scroll-link');
     anchorTags.forEach((tag) => {
       tag.addEventListener('mousedown', handleMouseDown);
@@ -42,10 +39,7 @@ export default function Secondnavbar() {
     document.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      // Remove event listeners when the component is unmounted
       anchorTags.forEach((tag) => {
-        tag.removeEventListener('mousedown', handleMouseDown);
-        tag.removeEventListener('mouseup', handleMouseUp);
         tag.addEventListener('dragstart', (e) => e.preventDefault());
         tag.addEventListener('mousedown', handleMouseDown);
         tag.addEventListener('mouseup', handleMouseUp);

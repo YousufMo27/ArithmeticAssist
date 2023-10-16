@@ -14,6 +14,11 @@ export function MoreTrigMenu () {
             document.getElementById('btn-21').style.color = 'white';
             document.getElementById('btn-21').style.fontWeight = 'bold';
 
+            document.getElementById('btn-21').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', 
+            });
+            
             window.addEventListener('beforeunload', () => {
                 // This code will run before the page is unloaded
                 document.getElementById('btn-21').style.backgroundColor = '';
@@ -65,6 +70,8 @@ export function MoreTrigMenu () {
             <MathComponent tex={String.raw`360^{o} = 2\pi`}/>
         </div>
         <p>Knowing these are all you really need for trig at this level.</p>
+        <iframe src="https://www.youtube.com/embed/JmLN3QxshlE"  width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p style={{marginBottom: 150}} id={InfoPages['vid-src']}><i>The Organic Chemistry Tutor</i> - Youtube</p>
         </div>
     </div>
 }
