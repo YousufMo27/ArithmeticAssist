@@ -24,3 +24,14 @@ npm i react-scroll
 ```
 npm i mathjax-react
 ```
+## Further improvements
+There are many things I would like to further improve and implement.
+- [ ] Improving the responsiveness 
+- [ ] Implementing a quiz feature to test the student's understanding
+- [ ] Implementing a login feature to have each student's progress saved
+- [ ] Improving the visual aesthetic of the website
+
+# Contact Me
+[Linkedin](https://www.linkedin.com/in/yousuf-mohiuddin/)
+[Email](yousufmohiuddin0529@gmail.com)
+[Github](https://github.com/YousufMo27)
