@@ -32,6 +32,6 @@ There are many things I would like to further improve and implement.
 - [ ] Improving the visual aesthetic of the website
 
 # Contact Me
-[Linkedin](https://www.linkedin.com/in/yousuf-mohiuddin/)
-[Email](yousufmohiuddin0529@gmail.com)
+[Linkedin](https://www.linkedin.com/in/yousuf-mohiuddin/)  
+[Email](yousufmohiuddin0529@gmail.com)  
 [Github](https://github.com/YousufMo27)
