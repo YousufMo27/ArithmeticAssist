@@ -9,8 +9,9 @@ import recip from '../images/recip.png'
 import jump from '../images/jump.png'
 import remov from '../images/remov.png'
 
-
+//function 
 export function CalculusMenu () {
+    //useEffect used to change the DOM
     useEffect(() => {
         document.title = 'Calculus';
         document.body.style.overflow = "hidden";

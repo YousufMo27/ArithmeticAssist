@@ -18,7 +18,6 @@ export function CurveMenu () {
                 block: 'start', 
             });
             window.addEventListener('beforeunload', () => {
-                // This code will run before the page is unloaded
                 document.getElementById('btn-twenty').style.backgroundColor = '';
             });
         }
@@ -33,7 +32,6 @@ export function CurveMenu () {
             document.getElementById('navbtn-20').style.fontWeight = 'bold';
 
             window.addEventListener('beforeunload', () => {
-                // This code will run before the page is unloaded
                 document.getElementById('navbtn-20').style.backgroundColor = '';
             });
         }

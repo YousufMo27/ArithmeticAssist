@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import InfoPages from '../info-pages.module.css';
-import { Link } from 'react-router-dom';
+
 
 export default function Secondnavbar() {
   const navbarRef = useRef(null);
